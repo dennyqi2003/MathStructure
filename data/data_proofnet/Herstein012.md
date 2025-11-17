@@ -1,0 +1,4 @@
+Exercise 2.5.30 Suppose that $|G| = pm$, where $p \nmid m$ and $p$ is a prime. If $H$ is a normal subgroup of order $p$ in $G$, prove that $H$ is characteristic.
+Proof.
+Let $G$ be a group of order $p m$, such that $p \nmid m$. Now, Given that $H$ is a normal subgroup of order $p$. Now we want to prove that $H$ is a characterestic subgroup, that is $\phi(H)=H$ for any automorphism $\phi$ of $G$. Now consider $\phi(H)$. Clearly $|\phi(H)|=p$. Suppose $\phi(H) \neq H$, then $H \cap \phi (H)=\{ e\}$. Consider $H \phi(H)$, this is a subgroup of $G$ as $H$ is normal. Also $|H \phi(H)|=p^2$. By lagrange's theorem then $p^2 \mid$ $p m \Longrightarrow p \mid m$ - contradiction. So $\phi(H)=H$, and $H$ is characterestic subgroup of $G$
+Qed.

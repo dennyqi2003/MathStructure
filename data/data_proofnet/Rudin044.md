@@ -1,0 +1,4 @@
+Exercise 4.11a Suppose $f$ is a uniformly continuous mapping of a metric space $X$ into a metric space $Y$ and prove that $\left\{f\left(x_{n}\right)\right\}$ is a Cauchy sequence in $Y$ for every Cauchy sequence $\{x_n\}$ in $X$.
+Proof.
+Suppose $\left\{x_n\right\}$ is a Cauchy sequence in $X$. Let $\varepsilon>0$ be given. Let $\delta>0$ be such that $d_Y(f(x), f(u))<\varepsilon$ if $d_X(x, u)<\delta$. Then choose $N$ so that $d_X\left(x_n, x_m\right)<\delta$ if $n, m>N$. Obviously $d_Y\left(f\left(x_n\right), f\left(x_m\right)\right)<\varepsilon$ if $m, n>N$, showing that $\left\{f\left(x_n\right)\right\}$ is a Cauchy sequence.
+Qed.

@@ -1,0 +1,4 @@
+Exercise 8.3.4 Prove that if an integer is the sum of two rational squares, then it is the sum of two integer squares.
+Proof.
+Let $n=\frac{a^2}{b^2}+\frac{c^2}{d^2}$, or, equivalently, $n(b d)^2=a^2 d^2+c^2 b^2$. From this, we see that $n(b d)^2$ can be written as a sum of two squared integers. Therefore, if $q \equiv 3(\bmod 4)$ and $q^i$ appears in the prime power factorization of $n, i$ must be even. Let $j \in \mathbb{N} \cup\{0\}$ such that $q^j$ divides $b d$. Then $q^{i-2 j}$ divides $n$. But since $i$ is even, $i-2 j$ is even as well. Consequently, $n$ can be written as a sum of two squared integers.
+Qed.

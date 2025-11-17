@@ -5,13 +5,11 @@ from pathlib import Path
 from typing import Any, Dict, List
 
 # --- Configuration Constants ---
-DATASET_FILE = "dataset.json"
+DATASET_FILE = "data_proofnet.json"
 WORKSPACE_DIR = "workspace"
 
-# MODIFIED: Renamed source file constant
 SOURCE_MD_FILE = "informal.md" 
 STRUCTURE_JSON_FILE = "structure.json"
-# MODIFIED: Renamed metadata file constant
 METADATA_JSON_FILE = "info.json"
 
 

@@ -1,0 +1,4 @@
+Exercise 13.6 Show that the lower limit topology $\mathbb{R}_l$ and $K$-topology $\mathbb{R}_K$ are not comparable.
+Proof.
+Let $\mathcal{T}_{\ell}$ and $\mathcal{T}_K$ denote the topologies of $\mathbb{R}_{\ell}$ and $\mathbb{R}_K$ respectively. Given the basis element $[0,1)$ for $\mathcal{T}_{\ell}$, there is no basis element for $\mathcal{T}_K$ containing 0 and contained in $[0,1)$, so $\mathcal{T}_{\ell} \not \subset \mathcal{T}_K$. Similarly, given the basis element $(-1,1) \backslash K$ for $\mathcal{T}_K$, there is no basis element for $\mathcal{T}_{\ell}$ containing 0 contained in $(-1,1) \backslash K$, so $\mathcal{T}_K \not \subset \mathcal{T}_{\ell}$.
+Qed.

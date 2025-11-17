@@ -1,0 +1,7 @@
+Exercise 2.4.16c Show that if $G=\langle x\rangle$ is a cyclic group of order $n \geq 1$ then a subgroup $H$ is maximal if and only $H=\left\langle x^{p}\right\rangle$ for some prime $p$ dividing $n$.
+Proof.
+Suppose $H$ is a maximal subgroup of $G$. Then $H$ is cyclic, and we may write $H=\left\langle x^k\right\rangle$ for some integer $k$, with $k>1$. Let $d=(n, k)$. Since $H$ is a proper subgroup, we know by Proposition 6 that $d>1$. Choose a prime factor $p$ of $d$. If $k=p=d$ then $k \mid n$ as required.
+
+If, however, $k$ is not prime, then consider the subgroup $K=\left\langle x^p\right\rangle$. Since $p$ is a proper divisor of $k$, it follows that $H<K$. But $H$ is maximal, so we must have $K=G$. Again by Proposition 6 , we must then have $(p, n)=1$. However, $p$ divides $d$ which divides $n$, so $p \mid n$ and $(p, n)=p>1$, a contradiction. Therefore $k=p$ and the left-to-right implication holds.
+Now, for the converse, suppose $H=\left\langle x^p\right\rangle$ for $p$ a prime dividing $n$. If $H$ is not maximal then the first part of this exercise shows that there is a maximal subgroup $K$ containing $H$. Then $K=\left\langle x^q\right\rangle$. So $x^p \in\left\langle x^q\right\rangle$, which implies $q \mid p$. But the only divisors of $p$ are 1 and $p$. If $q=1$ then $K=G$ and $K$ cannot be a proper subgroup, and if $q=p$ then $H=K$ and $H$ cannot be a proper subgroup of $K$. This contradiction shows that $H$ is maximal.
+Qed.

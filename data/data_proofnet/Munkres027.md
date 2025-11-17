@@ -1,0 +1,4 @@
+Exercise 23.2 Let $\left\{A_{n}\right\}$ be a sequence of connected subspaces of $X$, such that $A_{n} \cap A_{n+1} \neq \varnothing$ for all $n$. Show that $\bigcup A_{n}$ is connected.
+Proof.
+Suppose that $\bigcup_n A_n=B \cup C$, where $B$ and $C$ are disjoint open subsets of $\bigcup_n A_n$. Since $A_1$ is connected and a subset of $B \cup C$, by Lemma $23.2$ it lies entirely within either $B$ or $C$. Without any loss of generality, we may assume $A_1 \subset B$. Note that given $n$, if $A_n \subset B$ then $A_{n+1} \subset B$, for if $A_{n+1} \subset C$ then $A_n \cap A_{n+1} \subset B \cap C=\emptyset$, in contradiction with the assumption. By induction, $A_n \subset B$ for all $n \in \mathbb{Z}_{+}$, so that $\bigcup_n A_n \subset B$. It follows that $\bigcup_n A_n$ is connected.
+Qed.

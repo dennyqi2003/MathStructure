@@ -1,0 +1,5 @@
+Exercise 2.1.13 Let $H$ be a subgroup of the additive group of rational numbers with the property that $1 / x \in H$ for every nonzero element $x$ of $H$. Prove that $H=0$ or $\mathbb{Q}$.
+Proof.
+Solution: First, suppose there does not exist a nonzero element in $H$. Then $H=0$.
+Now suppose there does exist a nonzero element $a \in H$; without loss of generality, say $a=p / q$ in lowest terms for some integers $p$ and $q$ - that is, $\operatorname{gcd}(p, q)=1$. Now $q \cdot \frac{p}{q}=p \in H$, and since $q / p \in H$, we have $p \cdot \frac{q}{p} \in H$. There exist integers $x, y$ such that $q x+p y=1$; note that $q x \in H$ and $p y \in H$, so that $1 \in H$. Thus $n \in H$ for all $n \in \mathbb{Z}$. Moreover, if $n \neq 0,1 / n \in H$. Then $m / n \in H$ for all integers $m, n$ with $n \neq 0$; hence $H=\mathbb{Q}$.
+Qed.
