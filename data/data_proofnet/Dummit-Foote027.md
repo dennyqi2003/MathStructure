@@ -1,0 +1,4 @@
+Exercise 3.1.22a Prove that if $H$ and $K$ are normal subgroups of a group $G$ then their intersection $H \cap K$ is also a normal subgroup of $G$.
+Proof.
+Suppose $H$ and $K$ are normal subgroups of $G$. We already know that $H \cap K$ is a subgroup of $G$, so we need to show that it is normal. Choose any $g \in G$ and any $x \in H \cap K$. Since $x \in H$ and $H \unlhd G$, we know $g x g^{-1} \in H$. Likewise, since $x \in K$ and $K \unlhd G$, we have $g x g^{-1} \in K$. Therefore $g x g^{-1} \in H \cap K$. This shows that $g(H \cap K) g^{-1} \subseteq H \cap K$, and this is true for all $g \in G$. By Theorem 6 (5) (which we will prove in Exercise 3.1.25), this is enough to show that $H \cap K \unlhd G$.
+Qed.

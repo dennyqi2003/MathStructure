@@ -1,0 +1,4 @@
+Exercise 3.14 Prove that all entire functions that are also injective take the form $f(z) = az + b$, $a, b \in \mathbb{C}$ and $a \neq 0$.
+Proof.
+Look at $f(1 / z)$. If it has an essential singularity at 0 , then pick any $z_0 \neq 0$. Now we know that the range of $f$ is dense as $z \rightarrow 0$. We also know that the image of $f$ in some small ball around $z_0$ contains a ball around $f\left(z_0\right)$. But this means that the image of $f$ around this ball intersects the image of $f$ in any arbitrarily small ball around 0 (because of the denseness). Thus, $f$ cannot be injective. So the singularity at 0 is not essential, so $f(1 / z)$ is some polynomial of $1 / z$, so $f$ is some polynomial of $z$. If its degree is more than 1 it is not injective (fundamental theorem of algebra), so the degree of $f$ is 1 .
+Qed.

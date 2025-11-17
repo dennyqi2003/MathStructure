@@ -1,0 +1,5 @@
+Exercise 7.9 Prove that a normal operator on a complex inner-product space is self-adjoint if and only if all its eigenvalues are real.
+Proof.
+First off, suppose $V$ is a complex inner product space and $T \in L(V)$ is normal. If $T$ is self-adjoint, then all its eigenvalues are real. So, conversely, let all of the eigenvalues of $T$ be real. By the complex spectral theorem, there's an orthonormal basis $\left(e_1, \ldots, e_n\right)$ of $V$ consisting of eigenvectors of $T$. Thus, there exists real numbers $\lambda_1, \ldots, \lambda_n$ such that $T e_j=\lambda_j e_j$ for $j=$ $1, \ldots, n$.
+The matrix of $T$ with respect to the basis of $\left(e_1, \ldots, e_n\right)$ is the diagonal matrix with $\lambda_1, \ldots, \lambda_n$ on the diagonal. So, the matrix equals its conjugate transpose. Therefore, $T=T^*$. In other words, $T$ s self-adjoint.
+Qed.

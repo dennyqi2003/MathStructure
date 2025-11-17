@@ -1,0 +1,4 @@
+Exercise 4.15 Prove that every continuous open mapping of $R^{1}$ into $R^{1}$ is monotonic.
+Proof.
+Suppose $f$ is continuous and not monotonic, say there exist points $a<b<c$ with $f(a)<f(b)$, and $f(c)<f(b)$. Then the maximum value of $f$ on the closed interval $[a, c]$ is assumed at a point $u$ in the open interval $(a, c)$. If there is also a point $v$ in the open interval $(a, c)$ where $f$ assumes its minimum value on $[a, c]$, then $f(a, c)=[f(v), f(u)]$. If no such point $v$ exists, then $f(a, c)=(d, f(u)]$, where $d=\min (f(a), f(c))$. In either case, the image of $(a, c)$ is not open.
+Qed.

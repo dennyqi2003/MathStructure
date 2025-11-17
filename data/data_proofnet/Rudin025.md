@@ -1,0 +1,4 @@
+Exercise 3.3 If $s_{1}=\sqrt{2}$, and $s_{n+1}=\sqrt{2+\sqrt{s_{n}}} \quad(n=1,2,3, \ldots),$ prove that $\left\{s_{n}\right\}$ converges, and that $s_{n}<2$ for $n=1,2,3, \ldots$.
+Proof.
+Since $\sqrt{2}<2$, it is manifest that if $s_n<2$, then $s_{n+1}<\sqrt{2+2}=2$. Hence it follows by induction that $\sqrt{2}<s_n<2$ for all $n$. In view of this fact,it also follows that $\left(s_n-2\right)\left(s_n+1\right)<0$ for all $n>1$, i.e., $s_n>s_n^2-2=s_{n-1}$. Hence the sequence is an increasing sequence that is bounded above (by 2 ) and so converges. Since the limit $s$ satisfies $s^2-s-2=0$, it follows that the limit is 2.
+Qed.

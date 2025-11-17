@@ -1,0 +1,4 @@
+Exercise 4.2a If $f$ is a continuous mapping of a metric space $X$ into a metric space $Y$, prove that $f(\overline{E}) \subset \overline{f(E)}$ for every set $E \subset X$. ($\overline{E}$ denotes the closure of $E$).
+Proof.
+Let $x \in \bar{E}$. We need to show that $f(x) \in \overline{f(E)}$. To this end, let $O$ be any neighborhood of $f(x)$. Since $f$ is continuous, $f^{-1}(O)$ contains (is) a neighborhood of $x$. Since $x \in \bar{E}$, there is a point $u$ of $E$ in $f^{-1}(O)$. Hence $\frac{f(u)}{f(E)} \in O \cap f(E)$. Since $O$ was any neighborhood of $f(x)$, it follows that $f(x) \in \overline{f(E)}$
+Qed.

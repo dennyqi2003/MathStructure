@@ -1,0 +1,4 @@
+Exercise 16.4 A map $f: X \rightarrow Y$ is said to be an open map if for every open set $U$ of $X$, the set $f(U)$ is open in $Y$. Show that $\pi_{1}: X \times Y \rightarrow X$ and $\pi_{2}: X \times Y \rightarrow Y$ are open maps.
+Proof.
+Exercise 16.4. Let $U \times V$ be a (standard) basis element for $X \times Y$, so that $U$ is open in $X$ and $V$ is open in $Y$. Then $\pi_1(U \times V)=U$ is open in $X$ and $\pi_2(U \times V)=V$ is open in $Y$. Since arbitrary maps and unions satisfy $f\left(\bigcup_\alpha W_\alpha\right)=\bigcup_\alpha f\left(W_\alpha\right)$, it follows that $\pi_1$ and $\pi_2$ are open maps.
+Qed.

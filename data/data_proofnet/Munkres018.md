@@ -1,0 +1,4 @@
+Exercise 18.13 Let $A \subset X$; let $f: A \rightarrow Y$ be continuous; let $Y$ be Hausdorff. Show that if $f$ may be extended to a continuous function $g: \bar{A} \rightarrow Y$, then $g$ is uniquely determined by $f$.
+Proof.
+Let $h, g: \bar{A} \rightarrow Y$ be continuous extensions of $f$. Suppose that there is a point $x \in \bar{A}$ such that $h(x) \neq g(x)$. Since $h=g$ on $A$, we must have $x \in A^{\prime}$. Since $Y$ is Hausdorff, there is a neighbourhood $U$ of $h(x)$ and a neighbourhood $V$ of $g(x)$ such that $U \cap V=\emptyset$. Since $h$ and $g$ are continuous, $h^{-1}(U) \cap g^{-1}(V)$ is a neighbourhood of $x$. Since $x \in A^{\prime}$, there is a point $y \in h^{-1}(U) \cap g^{-1}(V) \cap A$ different from $x$. But $h=g$ on $A$, so $g^{-1}(V) \cap A=h^{-1}(V) \cap A$ and hence $y \in h^{-1}(U) \cap h^{-1}(V)=h^{-1}(U \cap V)=\emptyset$, a contradiction. It follows that $h=g$ on $\bar{A}$.
+Qed.

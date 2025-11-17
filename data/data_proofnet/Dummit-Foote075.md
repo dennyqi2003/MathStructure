@@ -1,0 +1,8 @@
+Exercise 8.3.5a Let $R=\mathbb{Z}[\sqrt{-n}]$ where $n$ is a squarefree integer greater than 3. Prove that $2, \sqrt{-n}$ and $1+\sqrt{-n}$ are irreducibles in $R$.
+Proof.
+Suppose $a=a_1+a_2 \sqrt{-n}, b=b_1+b_2 \sqrt{-n} \in R$ are such that $2=a b$, then $N(a) N(b)=4$. Without loss of generality we can assume $N(a) \leq N(b)$, so $N(a)=1$ or $N(a)=2$. Suppose $N(a)=2$, then $a_1^2+n a_2^2=2$ and since $n>3$ we have $a_2=0$, which implies $a_1^2=2$, a contradiction. So $N(a)=1$ and $a$ is a unit. Therefore 2 is irreducible in $R$.
+
+Suppose now $\sqrt{-n}=a b$, then $N(a) N(b)=n$ and we can assume $N(a)<$ $N(b)$ since $n$ is square free. Suppose $N(a)>1$, then $a_1^2+n a_2^2>1$ and $a_1^2+n a_2^2 \mid n$, so $a_2=0$, and therefore $a_1^2 \mid n$. Since $n$ is squarefree, $a_1=\pm 1$, a contradiction. Therefore $N(a)=1$ and so $a$ is a unit and $\sqrt{-n}$ is irreducible.
+
+Suppose $1+\sqrt{-n}=a b$, then $N(a) N(b)=n+1$ and we can assume $N(a) \leq N(b)$. Suppose $N(a)>1$, then $a_1^2+n a_2^2>1$ and $a_1^2+n a_2^2 \mid n+1$. If $\left|a_2\right| \geq 2$, then since $n>3$ we have a contradiction since $N(a)$ is too large. If $\left|a_2\right|=1$, then $a_1^2+n$ divides $1+n$ and so $a_1=\pm 1$, and in either case $N(a)=n+1$ which contradicts $N(a) \leq N(b)$. If $a_2=0$ then $a_1^2\left(b_1^2+n b_2^2\right)=\left(a_1 b_1\right)^2+n\left(a_1 b_2\right)^2=n+1$. If $\left|a_1 b_2\right| \geq 2$ we have a contradiction. If $\left|a_1 b_2\right|=1$ then $a_1=\pm 1$ which contradicts $N(a)>1$. If $\left|a_1 b_2\right|=0$, then $b_2=0$ and so $a_1 b_1=\sqrt{-n}$, a contradiction. Therefore $N(a)=1$ and so $a$ is a unit and $1+\sqrt{-n}$ is irreducible.
+Qed.

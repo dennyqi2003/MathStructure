@@ -1,0 +1,4 @@
+Exercise 4.8a Let $f$ be a real uniformly continuous function on the bounded set $E$ in $R^{1}$. Prove that $f$ is bounded on $E$.
+Proof.
+Let $a=\inf E$ and $b=\sup E$, and let $\delta>0$ be such that $|f(x)-f(y)|<1$ if $x, y \in E$ and $|x-y|<\delta$. Now choose a positive integer $N$ larger than $(b-a) / \delta$, and consider the $N$ intervals $I_k=\left[a+\frac{k-1}{b-a}, a+\frac{k}{b-a}\right], k=1,2, \ldots, N$. For each $k$ such that $I_k \cap E \neq \varnothing$ let $x_k \in E \cap I_k$. Then let $M=1+\max \left\{\left|f\left(x_k\right)\right|\right\}$. If $x \in E$, we have $\left|x-x_k\right|<\delta$ for some $k$, and hence $|f(x)|<M$.
+Qed.

@@ -1,0 +1,4 @@
+Exercise 4.5.14 Prove that a group of order 312 has a normal Sylow $p$-subgroup for some prime $p$ dividing its order.
+Proof.
+Let $n_{13}$ be the number of Sylow 13 -subgroup of $G$. Then by Sylow's Theorem, $n_{13} \equiv 1(\bmod 13)$ and $n_{13}$ divides $2^3 \cdot 3=24$. This implies $n_{13}=1$, so that there is only one Sylow 13 -subgroup, which is consequently normal. The last assertion follows from the fact conjugation preserves the order of a subgroup. So if there is only one subgroup $H$ of order 13 , then for any $g \in G$, we have $\left|g H g^{-1}\right|=|H|=13$, so $g H g^{-1}=H$, i.e. $H$ is normal.
+Qed.

@@ -1,0 +1,4 @@
+Exercise 2.4.16a A subgroup $M$ of a group $G$ is called a maximal subgroup if $M \neq G$ and the only subgroups of $G$ which contain $M$ are $M$ and $G$. Prove that if $H$ is a proper subgroup of the finite group $G$ then there is a maximal subgroup of $G$ containing $H$.
+Proof.
+If $H$ is maximal, then we are done. If $H$ is not maximal, then there is a subgroup $K_1$ of $G$ such that $H<K_1<G$. If $K_1$ is maximal, we are done. But if $K_1$ is not maximal, there is a subgroup $K_2$ with $H<K_1<K_2<G$. If $K_2$ is maximal, we are done, and if not, keep repeating the procedure. Since $G$ is finite, this process must eventually come to an end, so that $K_n$ is maximal for some positive integer $n$. Then $K_n$ is a maximal subgroup containing $H$.
+Qed.

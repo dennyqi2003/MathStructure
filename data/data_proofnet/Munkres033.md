@@ -1,0 +1,4 @@
+Exercise 24.2 Let $f: S^{1} \rightarrow \mathbb{R}$ be a continuous map. Show there exists a point $x$ of $S^{1}$ such that $f(x)=f(-x)$.
+Proof.
+Let $f: S^1 \rightarrow \mathbb{R}$ be continuous. Let $x \in S^1$. If $f(x)=f(-x)$ we are done, so assume $f(x) \neq f(-x)$. Define $g: S^1 \rightarrow \mathbb{R}$ by setting $g(x)=f(x)-f(-x)$. Then $g$ is continuous. Suppose $f(x)>f(-x)$, so that $g(x)>0$. Then $-x \in S^1$ and $g(-x)<0$. By the intermediate value theorem, since $S^1$ is connected and $g(-x)<0<g(x)$, there exists $y \in S^1$ such that $g(y)=0$. i.e, $f(y)=f(-y)$. Similarly, if $f(x)<f(-x)$, then $g(x)<0<g(-x)$ and again the intermediate value theorem gives the result.
+Qed.

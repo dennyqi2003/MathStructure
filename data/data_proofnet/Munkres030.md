@@ -1,0 +1,4 @@
+Exercise 23.6 Let $A \subset X$. Show that if $C$ is a connected subspace of $X$ that intersects both $A$ and $X-A$, then $C$ intersects $\operatorname{Bd} A$.
+Proof.
+Suppose that $C \cap B d A=C \cap \bar{A} \cap \overline{X-A}=\emptyset$. Then $C \cap A$ and $C \cap(X \backslash A)$ are a pair of disjoint non-empty sets whose union is all of $C$, neither of which contains a limit point of the other. Indeed, if $C \cap(X-A)$ contains a limit point $x$ of $C \cap A$, then $x \in C \cap(X-A) \cap A^{\prime} \subset C \cap \bar{A} \cap \overline{X-A}=\emptyset$, a contradiction, and similarly $C \cap A$ does not contain a limit point of $C \cap(X-A)$. Then $C \cap A$ and $C \cap(X-A)$ constitute a separation of $C$, contradicting the fact that $C$ is connected (Lemma 23.1).
+Qed.
