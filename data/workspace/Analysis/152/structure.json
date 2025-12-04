@@ -1,0 +1,69 @@
+{
+  "structure": [
+    {
+      "type": "Hint",
+      "text": "Exercise 2.46"
+    },
+    {
+      "type": "Fix",
+      "variable": [
+        "$M$",
+        "$A$",
+        "$B$"
+      ],
+      "condition": [
+        "$M$ is a metric space",
+        "$A, B$ are compact, disjoint, nonempty subsets of $M$"
+      ],
+      "scope": [
+        {
+          "type": "Show",
+          "proposition": [
+            "there are $a_0 \\in A$ and $b_0 \\in B$ such that for all $a \\in A$ and $b \\in B$ we have $d(a_0, b_0) \\leq d(a, b)$"
+          ],
+          "method": null,
+          "scope": [
+            {
+              "type": "Have",
+              "claim": [
+                "The distance function $d: M \\times M \\rightarrow \\mathbb{R}$ is continuous."
+              ],
+              "reason": [
+                "We saw in class"
+              ]
+            },
+            {
+              "type": "Have",
+              "claim": [
+                "Any continuous, real-valued function assumes maximum and minimum values on a compact set."
+              ],
+              "reason": [
+                "We also saw in class"
+              ]
+            },
+            {
+              "type": "Have",
+              "claim": [
+                "$A \\times B$ is a (non-empty) compact set in $M \\times M$."
+              ],
+              "reason": [
+                "$A$ and $B$ are compact"
+              ]
+            },
+            {
+              "type": "Obtain",
+              "obtained_variable": [
+                "$(a_0, b_0)$"
+              ],
+              "condition": [
+                "$(a_0, b_0) \\in A \\times B$",
+                "$d(a_0, b_0) \\leq d(a, b), \\forall(a, b) \\in A \\times B$"
+              ],
+              "reason": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

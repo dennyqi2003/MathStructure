@@ -36,27 +36,32 @@ def pack_data():
             current_id_str = proof_path.name
             
             try:
-                # --- MODIFIED BLOCK START ---
-                # Define paths to the renamed files
-                metadata_file = proof_path / utils.METADATA_JSON_FILE # info.json
-                source_file = proof_path / utils.SOURCE_MD_FILE   # informal.md
-                structure_file = proof_path / utils.STRUCTURE_JSON_FILE
+                metadata_file = proof_path / utils.METADATA_JSON_FILE  # info.json
+                source_file = proof_path / utils.SOURCE_MD_FILE      # informal.md
+                structure_file = proof_path / utils.STRUCTURE_JSON_FILE # structure.json
+                sketch_file = proof_path / utils.LEAN_SKETCH_MD_FILE # lean_sketch.md (NEW)
 
-                if not all([metadata_file.is_file(), source_file.is_file(), structure_file.is_file()]):
+                # 检查所有必需文件是否存在
+                if not all([metadata_file.is_file(), source_file.is_file(), 
+                            structure_file.is_file(), sketch_file.is_file()]): # (NEW check)
                     print(f"Warning: Skipping directory '{proof_path}' due to missing files.")
                     continue
 
-                # Start by loading the metadata from info.json
+                # 1. 从 info.json 加载元数据
                 with open(metadata_file, 'r', encoding='utf-8') as f:
                     proof_data = json.load(f)
                 
-                # Read informal.md and add it to the 'informal' key
+                # 2. 读 informal.md
                 with open(source_file, 'r', encoding='utf-8') as f:
                     proof_data["informal"] = f.read()
-                # --- MODIFIED BLOCK END ---
 
+                # 3. 读 structure.json
                 with open(structure_file, 'r', encoding='utf-8') as f:
                     proof_data["structure"] = json.load(f)
+                
+                # 4. 读 lean_sketch.md (NEW)
+                with open(sketch_file, 'r', encoding='utf-8') as f:
+                    proof_data["lean_sketch"] = f.read()
                 
                 # Ensure the id is an integer for correct sorting
                 if 'id' in proof_data:

@@ -1,0 +1,76 @@
+{
+  "structure": [
+    {
+      "type": "Hint",
+      "text": "Exercise 3.1"
+    },
+    {
+      "type": "Fix",
+      "variable": [
+        "$f$"
+      ],
+      "condition": [
+        "$f \\colon \\mathbb{R} \\rightarrow \\mathbb{R}$",
+        "$\\forall t, x \\in \\mathbb{R}, |f(t)-f(x)| \\leq|t-x|^{2}$"
+      ],
+      "scope": [
+        {
+          "type": "Show",
+          "proposition": [
+            "$f$ is constant"
+          ],
+          "method": null,
+          "scope": [
+            {
+              "type": "Fix",
+              "variable": [
+                "$x$"
+              ],
+              "condition": [
+                "$x \\in \\mathbb{R}$"
+              ],
+              "scope": [
+                {
+                  "type": "Have",
+                  "claim": [
+                    "for $t \\neq x$, $\\left|\\frac{f(t)-f(x)}{t-x}\\right| \\leq|t-x|$"
+                  ],
+                  "reason": null
+                },
+                {
+                  "type": "Have",
+                  "claim": [
+                    "$\\lim _{t \\rightarrow x}\\left|\\frac{f(t)-f(x)}{t-x}\\right|=0$"
+                  ],
+                  "reason": [
+                    "for $t \\neq x$, $\\left|\\frac{f(t)-f(x)}{t-x}\\right| \\leq|t-x|$"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Have",
+              "claim": [
+                "$f$ is differentiable in $\\mathbb{R}$",
+                "$f^{\\prime}=0$"
+              ],
+              "reason": [
+                "For any $x \\in \\mathbb{R}$, $\\lim _{t \\rightarrow x}\\left|\\frac{f(t)-f(x)}{t-x}\\right|=0$"
+              ]
+            },
+            {
+              "type": "Have",
+              "claim": [
+                "$f$ is constant"
+              ],
+              "reason": [
+                "$f^{\\prime}=0$",
+                "as seen in class"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

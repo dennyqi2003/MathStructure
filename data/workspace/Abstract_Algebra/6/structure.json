@@ -1,0 +1,118 @@
+{
+  "structure": [
+    {
+      "type": "Hint",
+      "text": "Exercise 3.2.7"
+    },
+    {
+      "type": "Fix",
+      "variable": [
+        "$F$",
+        "$K$"
+      ],
+      "condition": [
+        "$F$ and $K$ are fields"
+      ],
+      "scope": [
+        {
+          "type": "Fix",
+          "variable": [
+            "$f$"
+          ],
+          "condition": [
+            "$f$ is a homomorphism from $F$ to $K$"
+          ],
+          "scope": [
+            {
+              "type": "Show",
+              "proposition": [
+                "$f$ is injective"
+              ],
+              "method": null,
+              "scope": [
+                {
+                  "type": "Fix",
+                  "variable": [
+                    "$a$",
+                    "$b$"
+                  ],
+                  "condition": [
+                    "$a \\in F$",
+                    "$b \\in F$"
+                  ],
+                  "scope": [
+                    {
+                      "type": "Assume",
+                      "assumption": [
+                        "$f(a)=f(b)$"
+                      ],
+                      "scope": [
+                        {
+                          "type": "Have",
+                          "claim": [
+                            "$f(a-b)=0=f(0)$"
+                          ],
+                          "reason": null
+                        },
+                        {
+                          "type": "Define",
+                          "term": "$u$",
+                          "definition": "$u = a-b$"
+                        },
+                        {
+                          "type": "Assume",
+                          "assumption": [
+                            "$u \\neq 0$"
+                          ],
+                          "scope": [
+                            {
+                              "type": "Have",
+                              "claim": [
+                                "$f(u) f(u^{-1})=f(1)=1$"
+                              ],
+                              "reason": null
+                            },
+                            {
+                              "type": "Have",
+                              "claim": [
+                                "$0 f(u^{-1})=1$"
+                              ],
+                              "reason": null
+                            },
+                            {
+                              "type": "Have",
+                              "claim": [
+                                "contradiction"
+                              ],
+                              "reason": [
+                                "the statement $0 f(u^{-1})=1$ is impossible"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "Have",
+                          "claim": [
+                            "$a-b=0$"
+                          ],
+                          "reason": null
+                        },
+                        {
+                          "type": "Have",
+                          "claim": [
+                            "$a=b$"
+                          ],
+                          "reason": null
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

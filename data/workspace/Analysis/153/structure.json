@@ -1,0 +1,92 @@
+{
+  "structure": [
+    {
+      "type": "Hint",
+      "text": "Exercise 2.57"
+    },
+    {
+      "type": "Show",
+      "proposition": [
+        "There exists a set $S$ such that $S$ is connected and its interior is not connected."
+      ],
+      "method": null,
+      "scope": [
+        {
+          "type": "Define",
+          "term": "$A$",
+          "definition": "In the space $X=\\mathbb{R}^2$, let $A=([-2,0] \\times[-2,0]) \\cup([0,2] \\times[0,2])$"
+        },
+        {
+          "type": "Have",
+          "claim": [
+            "$A$ is connected"
+          ],
+          "reason": null
+        },
+        {
+          "type": "Show",
+          "proposition": [
+            "$\\operatorname{int}(A)$ is not connected"
+          ],
+          "method": null,
+          "scope": [
+            {
+              "type": "Define",
+              "term": "$f$",
+              "definition": "the continuous function $f: \\mathbb{R}^2 \\rightarrow \\mathbb{R}$ defined by $f(x, y)=x+y$"
+            },
+            {
+              "type": "Define",
+              "term": "$U$",
+              "definition": "$U=f^{-1}(0,+\\infty)$"
+            },
+            {
+              "type": "Have",
+              "claim": [
+                "$U$ is open in $\\mathbb{R}^2$",
+                "$U \\cap \\operatorname{int}(A)$ is open in $\\operatorname{int}(A)$"
+              ],
+              "reason": null
+            },
+            {
+              "type": "Have",
+              "claim": [
+                "for all $(x, y) \\in \\operatorname{int}(A), f(x, y) \\neq 0$"
+              ],
+              "reason": [
+                "$(0,0) \\notin \\operatorname{int}(A)$"
+              ]
+            },
+            {
+              "type": "Have",
+              "claim": [
+                "$U \\cap \\operatorname{int}(A)$ is closed in $\\operatorname{int}(A)$"
+              ],
+              "reason": [
+                "$U \\cap \\operatorname{int}(A)=f^{-1}[0,+\\infty) \\cap \\operatorname{int}(A)$"
+              ]
+            },
+            {
+              "type": "Have",
+              "claim": [
+                "$U \\cap \\operatorname{int}(A) \\neq \\emptyset$"
+              ],
+              "reason": [
+                "$(1,1)=f^{-1}(2) \\in U \\cap \\operatorname{int}(A)$"
+              ]
+            },
+            {
+              "type": "Have",
+              "claim": [
+                "$U \\cap \\operatorname{int}(A) \\neq \\operatorname{int}(A)$"
+              ],
+              "reason": [
+                "$(-1,-1) \\in \\operatorname{int}(A)$ and $(-1,-1) \\notin U$"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

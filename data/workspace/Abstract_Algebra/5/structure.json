@@ -1,0 +1,73 @@
+{
+  "structure": [
+    {
+      "type": "Hint",
+      "text": "Exercise 2.11.3"
+    },
+    {
+      "type": "Fix",
+      "variable": [
+        "G"
+      ],
+      "condition": [
+        "G is a group",
+        "the order of G is even"
+      ],
+      "scope": [
+        {
+          "type": "Show",
+          "proposition": [
+            "G contains an element of order 2"
+          ],
+          "method": null,
+          "scope": [
+            {
+              "type": "Hint",
+              "text": "Pair up if possible each element of G with its inverse, and observe that"
+            },
+            {
+              "type": "Have",
+              "claim": [
+                "\\forall g \\in G, (g^2 \\neq e \\Longleftrightarrow g \\neq g^{-1} \\Longleftrightarrow \\text{ there exists the pair }(g, g^{-1}))"
+              ],
+              "reason": null
+            },
+            {
+              "type": "Have",
+              "claim": [
+                "there is one element that has no pairing: the unit e"
+              ],
+              "reason": [
+                "since indeed $e=e^{-1} \\Longleftrightarrow e^2=e$"
+              ]
+            },
+            {
+              "type": "Obtain",
+              "obtained_variable": [
+                "a"
+              ],
+              "condition": [
+                "a \\in G",
+                "a \\neq e",
+                "a = a^{-1}"
+              ],
+              "reason": [
+                "the number of elements of G is even",
+                "the unit e has no pairing"
+              ]
+            },
+            {
+              "type": "Have",
+              "claim": [
+                "a^2 = e"
+              ],
+              "reason": [
+                "a = a^{-1}"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

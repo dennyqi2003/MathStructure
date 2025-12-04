@@ -1,0 +1,47 @@
+{
+    "structure": [
+        {
+            "type": "Hint",
+            "text": "Exercise 2.3.2"
+        },
+        {
+            "type": "Fix",
+            "variable": [
+                "$G$"
+            ],
+            "condition": [
+                "$G$ is a group"
+            ],
+            "scope": [
+                {
+                    "type": "Fix",
+                    "variable": [
+                        "$a$",
+                        "$b$"
+                    ],
+                    "condition": [
+                        "$a, b \\in G$"
+                    ],
+                    "scope": [
+                        {
+                            "type": "Show",
+                            "proposition": [
+                                "the products $a b$ and $b a$ are conjugate elements in G"
+                            ],
+                            "method": null,
+                            "scope": [
+                                {
+                                    "type": "Have",
+                                    "claim": [
+                                        "$(a^{-1})ab(a^{-1})^{-1} = ba$"
+                                    ],
+                                    "reason": null
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

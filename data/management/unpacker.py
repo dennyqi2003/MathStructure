@@ -60,25 +60,37 @@ def unpack_data():
         domain = data.get("domain")
         informal_text = data.get("informal")
         structure = data.get("structure")
+        lean_sketch = data.get("lean_sketch")
 
-        # --- MODIFIED LINE START ---
-        # The check for 'structure' is now `is not None`, which correctly handles empty lists [].
-        if not all([proof_id is not None, domain, informal_text, structure is not None]):
-        # --- MODIFIED LINE END ---
+        if not all([proof_id is not None, domain, informal_text, 
+                    structure is not None, lean_sketch is not None]):
             print(f"Warning: Skipping an entry due to missing 'id', 'domain', "
-                  f"'informal', or 'structure' field.")
+                  f"'informal', 'structure', or 'lean_sketch' field.")
             continue
         
         proof_id_str = str(proof_id)
         
         try:
-            # ... (the rest of the file writing logic is unchanged) ...
             target_dir = utils.get_proof_path(domain, proof_id_str)
             with open(target_dir / utils.SOURCE_MD_FILE, 'w', encoding='utf-8') as md_file:
                 md_file.write(informal_text)
+
+            # 写入 structure.json
             with open(target_dir / utils.STRUCTURE_JSON_FILE, 'w', encoding='utf-8') as struct_file:
                 json.dump(structure, struct_file, indent=4, ensure_ascii=False)
-            metadata = {key: value for key, value in data.items() if key not in ["informal", "structure"]}
+            
+            # --- NEW BLOCK START ---
+            # 写入 lean_sketch.md
+            with open(target_dir / utils.LEAN_SKETCH_MD_FILE, 'w', encoding='utf-8') as sketch_file:
+                sketch_file.write(lean_sketch)
+            # --- NEW BLOCK END ---
+
+            # --- MODIFIED BLOCK START ---
+            # 创建 metadata (info.json)，排除所有独立文件字段
+            # (符合你的要求: id, domain, source, checked 会被保留)
+            keys_to_exclude = ["informal", "structure", "lean_sketch"]
+            metadata = {key: value for key, value in data.items() if key not in keys_to_exclude}
+            # --- MODIFIED BLOCK END ---
             with open(target_dir / utils.METADATA_JSON_FILE, 'w', encoding='utf-8') as meta_file:
                 json.dump(metadata, meta_file, indent=4, ensure_ascii=False)
             proof_count += 1

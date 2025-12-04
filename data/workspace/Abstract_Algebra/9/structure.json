@@ -1,0 +1,221 @@
+{
+  "structure": [
+    {
+      "type": "Hint",
+      "text": "Exercise 6.1.14"
+    },
+    {
+      "type": "Fix",
+      "variable": [
+        "$G$",
+        "$Z$"
+      ],
+      "condition": [
+        "$G$ is a group",
+        "$Z$ is the center of a group $G$"
+      ],
+      "scope": [
+        {
+          "type": "Show",
+          "proposition": [
+            "if $G / Z$ is a cyclic group, then $G$ is abelian and hence $G=Z$"
+          ],
+          "method": null,
+          "scope": [
+            {
+              "type": "Assume",
+              "assumption": [
+                "$G / Z$ is a cyclic group"
+              ],
+              "scope": [
+                {
+                  "type": "Obtain",
+                  "obtained_variable": [
+                    "$x$"
+                  ],
+                  "condition": [
+                    "$x \\in G$",
+                    "$G / Z(G)=\\langle x Z(G)\\rangle$"
+                  ],
+                  "reason": [
+                    "$G / Z(G)$ is cyclic"
+                  ]
+                },
+                {
+                  "type": "Fix",
+                  "variable": [
+                    "$g$"
+                  ],
+                  "condition": [
+                    "$g \\in G$"
+                  ],
+                  "scope": [
+                    {
+                      "type": "Obtain",
+                      "obtained_variable": [
+                        "$m$"
+                      ],
+                      "condition": [
+                        "$m$ is an integer",
+                        "$g Z(G)=(x Z(G))^m$"
+                      ],
+                      "reason": null
+                    },
+                    {
+                      "type": "Have",
+                      "claim": [
+                        "$(x Z(G))^m=x^m Z(G)$"
+                      ],
+                      "reason": [
+                        "by definition"
+                      ]
+                    },
+                    {
+                      "type": "Have",
+                      "claim": [
+                        "if $H \\leq G$, we have by definition too that $a H=b H$ if and only if $b^{-1} a \\in H$"
+                      ],
+                      "reason": null
+                    },
+                    {
+                      "type": "Have",
+                      "claim": [
+                        "$g Z(G)=x^m Z(G)$ if and only if $\\left(x^m\\right)^{-1} g \\in Z(G)$"
+                      ],
+                      "reason": [
+                        "In our case"
+                      ]
+                    },
+                    {
+                      "type": "Obtain",
+                      "obtained_variable": [
+                        "$z$"
+                      ],
+                      "condition": [
+                        "$z \\in Z(G)$",
+                        "$\\left(x^m\\right)^{-1} g=z$"
+                      ],
+                      "reason": null
+                    },
+                    {
+                      "type": "Have",
+                      "claim": [
+                        "$g=x^m z$"
+                      ],
+                      "reason": null
+                    }
+                  ]
+                },
+                {
+                  "type": "Show",
+                  "proposition": [
+                    "$G$ is abelian"
+                  ],
+                  "method": null,
+                  "scope": [
+                    {
+                      "type": "Fix",
+                      "variable": [
+                        "$g$",
+                        "$h$"
+                      ],
+                      "condition": [
+                        "$g \\in G$",
+                        "$h \\in G$"
+                      ],
+                      "scope": [
+                        {
+                          "type": "Obtain",
+                          "obtained_variable": [
+                            "$a_1$",
+                            "$z_1$",
+                            "$a_2$",
+                            "$z_2$"
+                          ],
+                          "condition": [
+                            "$a_1, a_2$ are integers",
+                            "$z_1, z_2 \\in Z$",
+                            "$g=x^{a_1} z_1$",
+                            "$h=x^{a_2} z_2$"
+                          ],
+                          "reason": [
+                            "As shown in the preceding argument, any element in G can be written in this form."
+                          ]
+                        },
+                        {
+                          "type": "CalculationChain",
+                          "initial_expression": [
+                            "$gh$"
+                          ],
+                          "step": [
+                            {
+                              "operator": "=",
+                              "expression": [
+                                "$(x^{a_1} z_1)(x^{a_2} z_2)$"
+                              ],
+                              "reason": null
+                            },
+                            {
+                              "operator": "=",
+                              "expression": [
+                                "$x^{a_1} x^{a_2} z_1 z_2$"
+                              ],
+                              "reason": [
+                                "$z_1 \\in Z$"
+                              ]
+                            },
+                            {
+                              "operator": "=",
+                              "expression": [
+                                "$x^{a_1+a_2} z_2 z_1$"
+                              ],
+                              "reason": [
+                                "$z_1, z_2 \\in Z$"
+                              ]
+                            },
+                            {
+                              "operator": "=",
+                              "expression": [
+                                "$(x^{a_2} z_2)(x^{a_1} z_1)$"
+                              ],
+                              "reason": [
+                                "..."
+                              ]
+                            },
+                            {
+                              "operator": "=",
+                              "expression": [
+                                "$hg$"
+                              ],
+                              "reason": null
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "Have",
+                      "claim": [
+                        "$G$ is abelian"
+                      ],
+                      "reason": null
+                    }
+                  ]
+                },
+                {
+                  "type": "Have",
+                  "claim": [
+                    "$G=Z$"
+                  ],
+                  "reason": [
+                    "$G$ is abelian"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

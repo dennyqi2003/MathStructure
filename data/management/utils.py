@@ -5,12 +5,13 @@ from pathlib import Path
 from typing import Any, Dict, List
 
 # --- Configuration Constants ---
-DATASET_FILE = "data_proofnet.json"
+DATASET_FILE = "data_test.json"
 WORKSPACE_DIR = "workspace"
 
 SOURCE_MD_FILE = "informal.md" 
 STRUCTURE_JSON_FILE = "structure.json"
 METADATA_JSON_FILE = "info.json"
+LEAN_SKETCH_MD_FILE = "lean_sketch.md"
 
 
 def get_proof_path(domain: str, proof_id_num: str) -> Path:

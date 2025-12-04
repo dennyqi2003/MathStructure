@@ -1,0 +1,42 @@
+{
+  "structure": [
+    {
+      "type": "Hint",
+      "text": "Exercise 3.63a"
+    },
+    {
+      "type": "Show",
+      "proposition": [
+        "$\\sum_{k=2}^{\\infty} 1/(k(\\log(k))^p)$ converges when $p > 1$"
+      ],
+      "method": [
+        "integral test"
+      ],
+      "scope": [
+        {
+          "type": "Have",
+          "claim": [
+            "For any integer $a>1$ and real number $c$, $\\lim _{b \\rightarrow \\infty} \\int_a^b \\frac{1}{x \\log (x)^c} d x = \\lim _{b \\rightarrow \\infty}\\left(\\frac{\\log (b)^{1-c}}{1-c}-\\frac{\\log (a)^{1-c}}{1-c}\\right)$"
+          ],
+          "reason": null
+        },
+        {
+          "type": "Have",
+          "claim": [
+            "For any integer $a>1$ and real number $c$, the limit $\\lim _{b \\rightarrow \\infty}\\left(\\frac{\\log (b)^{1-c}}{1-c}-\\frac{\\log (a)^{1-c}}{1-c}\\right)$ converges if $c>1$ and goes to infinity if $c \\leq 1$."
+          ],
+          "reason": null
+        },
+        {
+          "type": "Have",
+          "claim": [
+            "The series $\\sum_{n=2}^{\\infty} \\frac{1}{n \\log (n)^c}$ converges if and only if $c>1$."
+          ],
+          "reason": [
+            "Integral Test"
+          ]
+        }
+      ]
+    }
+  ]
+}

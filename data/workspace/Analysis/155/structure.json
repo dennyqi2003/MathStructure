@@ -1,0 +1,175 @@
+{
+  "structure": [
+    {
+      "type": "Hint",
+      "text": "Exercise 2.126"
+    },
+    {
+      "type": "Fix",
+      "variable": [
+        "$E$"
+      ],
+      "condition": [
+        "$E$ is an uncountable subset of $\\mathbb{R}$"
+      ],
+      "scope": [
+        {
+          "type": "Show",
+          "proposition": [
+            "there exists a point $p \\in \\mathbb{R}$ at which $E$ condenses"
+          ],
+          "method": [
+            "proof by contrapositive"
+          ],
+          "scope": [
+            {
+              "type": "Hint",
+              "text": "I think this is the proof by contrapositive that you were getting at."
+            },
+            {
+              "type": "Assume",
+              "assumption": [
+                "$E$ has no limit points at all"
+              ],
+              "scope": [
+                {
+                  "type": "Fix",
+                  "variable": [
+                    "$x$"
+                  ],
+                  "condition": [
+                    "$x \\in E$"
+                  ],
+                  "scope": [
+                    {
+                      "type": "Obtain",
+                      "obtained_variable": [
+                        "$\\delta$"
+                      ],
+                      "condition": [
+                        "$\\delta > 0$",
+                        "$B_\\delta(x) \\cap E=\\{x\\}$"
+                      ],
+                      "reason": [
+                        "$x$ is not a limit point of $E$"
+                      ]
+                    },
+                    {
+                      "type": "Define",
+                      "term": "a constructed list of points",
+                      "definition": "A countable list of unique points is generated as follows: 'point 1' is x. 'point 2' is the closest element to x on its left, if it exists. 'point 3' is the first point to the right of x. 'point 4' is the first point to the left of point 2, and so on, ad infinitum."
+                    },
+                    {
+                      "type": "Show",
+                      "proposition": [
+                        "The constructed list of points exhausts the entire set $E$"
+                      ],
+                      "method": [
+                        "contradiction"
+                      ],
+                      "scope": [
+                        {
+                          "type": "Assume",
+                          "assumption": [
+                            "The constructed list of points does not exhaust the entire set $E$"
+                          ],
+                          "scope": [
+                            {
+                              "type": "Obtain",
+                              "obtained_variable": [
+                                "$a$"
+                              ],
+                              "condition": [
+                                "$a \\in E$",
+                                "$a < x$",
+                                "$a$ is not in the constructed list"
+                              ],
+                              "reason": null
+                            },
+                            {
+                              "type": "Hint",
+                              "text": "picking $a$ on the negative side of $x$ is arbitrary, and the same argument would work for the second case"
+                            },
+                            {
+                              "type": "Obtain",
+                              "obtained_variable": [
+                                "sequence $\\left\\{a_i\\right\\}$"
+                              ],
+                              "condition": [
+                                "$\\left\\{a_i\\right\\}$ is an infinite monotone-increasing sequence",
+                                "$\\forall i, a_i \\in E$",
+                                "$\\forall i, a_i$ is not in the constructed list",
+                                "The sequence is bounded above by $x$"
+                              ],
+                              "reason": [
+                                "Repeating the process of finding the closest element to the right in $E$ that is not in the list, starting from $a$."
+                              ]
+                            },
+                            {
+                              "type": "Have",
+                              "claim": [
+                                "The sequence $\\left\\{a_i\\right\\}$ has a limit."
+                              ],
+                              "reason": [
+                                "Monotone Convergence Theorem"
+                              ]
+                            },
+                            {
+                              "type": "Have",
+                              "claim": [
+                                "$E$ has a limit point."
+                              ],
+                              "reason": [
+                                "The sequence $\\left\\{a_i\\right\\} \\subset E$ converges to a limit."
+                              ]
+                            },
+                            {
+                              "type": "Have",
+                              "claim": [
+                                "Contradiction"
+                              ],
+                              "reason": [
+                                "This contradicts the assumption that $E$ has no limit points."
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "Have",
+                      "claim": [
+                        "The constructed list exhausts $E$, and we have enumerated all its elements."
+                      ],
+                      "reason": [
+                        "The assumption that the list does not exhaust E leads to a contradiction."
+                      ]
+                    },
+                    {
+                      "type": "Have",
+                      "claim": [
+                        "$E$ is a countable set."
+                      ],
+                      "reason": [
+                        "The constructed list enumerates all elements of E."
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Have",
+                  "claim": [
+                    "Contradiction"
+                  ],
+                  "reason": [
+                    "This contradicts the given information that $E$ is an uncountable subset of $\\mathbb{R}$."
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
