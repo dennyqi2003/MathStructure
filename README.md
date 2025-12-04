@@ -84,7 +84,7 @@ Put your informal mathematical proof into the following file:
 
 Run the main controller script.
 
-**Run the Full Pipeline (Recommended):**
+**Run the Full Pipeline:**
 
 ```bash
 python main.py

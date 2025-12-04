@@ -3,6 +3,5 @@
 /test
 /data
 /lean_env/.lake
-/utils/__pycache__
-/src/structure_gen/__pycache__
-/src/lean_sketch_gen/__pycache__
+__pycache__/
+*.py[cod]
