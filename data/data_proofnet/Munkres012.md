@@ -1,4 +1,0 @@
-Exercise 16.1 Show that if $Y$ is a subspace of $X$, and $A$ is a subset of $Y$, then the topology $A$ inherits as a subspace of $Y$ is the same as the topology it inherits as a subspace of $X$.
-Proof.
-Exercise 16.1. Let $\mathcal{T}$ be the topology $A$ inherits as a subspace of $Y$, and $\mathcal{O}$ be the topology it inherits as a subspace of $X$. A (standard) basis element for $\mathcal{T}$ has the form $U \cap A$ where $U$ is open in $Y$, so is of the form $(Y \cap V) \cap A=V \cap A$ where $V$ is open in $X$. Therefore every basis element for $\mathcal{T}$ is also a basis element for $\mathcal{O}$. Conversely, a (standard) basis element for $\mathcal{O}$ have the form $W \cap A=W \cap Y \cap A$ where $W$ is open in $X$. Since $W \cap Y$ is open in $Y$, this is a basis element for $\mathcal{T}$, so every basis element for $\mathcal{O}$ is a basis element for $\mathcal{T}$. It follows that $\mathcal{T}=\mathcal{O}$.
-Qed.

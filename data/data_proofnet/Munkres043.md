@@ -1,4 +1,0 @@
-Exercise 29.1 Show that the rationals $\mathbb{Q}$ are not locally compact.
-Proof.
-First, we prove that each set $\mathbb{Q} \cap[a, b]$, where $a, b$ are irrational numbers, is not compact. Indeed, since $\mathbb{Q} \cap[a, b]$ is countable, we can write $\mathbb{Q} \cap[a, b]=\left\{q_1, q_2, \ldots\right\}$. Then $\left\{U_i\right\}_{i \in \mathbb{Z}_{+}}$, where $U_i=\mathbb{Q} \cap\left[a, q_i\right)$ for each $i$, is an open covering of $\mathbb{Q} \cap[a, b]$ with no finite subcovering. Now let $x \in \mathbb{Q}$ and suppose that $\mathbb{Q}$ is locally compact at $x$. Then there exists a compact set $C$ containing a neighbourhood $U$ of $x$. Then $U$ contains a set $\mathbb{Q} \cap[a, b]$ where $a, b$ are irrational numbers. Since this set is closed and contained in the compact $C$, it follows $\mathbb{Q} \cap[a, b]$ is compact, a contradiction. Therefore, $\mathbb{Q}$ is not locally compact.
-Qed.

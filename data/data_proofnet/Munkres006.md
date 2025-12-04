@@ -1,4 +1,0 @@
-Exercise 13.4b2 Let $\mathcal{T}_\alpha$ be a family of topologies on $X$. Show that there is a unique largest topology on $X$ contained in all the collections $\mathcal{T}_\alpha$.
-Proof.
-Now we prove that there exists a unique largest topology contained in all $\mathcal{T}_\alpha$. Uniqueness of such topology is clear. Consider $\mathcal{T}=\bigcap_\alpha \mathcal{T}_\alpha$. We already know that $\mathcal{T}$ is a topology by, and clearly $\mathcal{T} \subset \mathcal{T}_\alpha$ for all $\alpha$. If $\mathcal{O}$ is another topology contained in all $\mathcal{T}_\alpha$, it must be contained in their intersection, so $\mathcal{O} \subset \mathcal{T}$. I follows that $\mathcal{T}$ is the unique largest topology contained in all $\mathcal{T}_\alpha$.
-Qed.

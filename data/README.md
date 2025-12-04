@@ -1,1 +1,0 @@
-data_test_proofnet.json是从ProofNet中提取的374个证明数据

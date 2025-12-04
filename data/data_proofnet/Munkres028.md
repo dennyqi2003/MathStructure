@@ -1,4 +1,0 @@
-Exercise 23.3 Let $\left\{A_{\alpha}\right\}$ be a collection of connected subspaces of $X$; let $A$ be a connected subset of $X$. Show that if $A \cap A_{\alpha} \neq \varnothing$ for all $\alpha$, then $A \cup\left(\bigcup A_{\alpha}\right)$ is connected.
-Proof.
-For each $\alpha$ we have $A \cap A_\alpha \neq \emptyset$, so each $A \cup A_\alpha$ is connected by Theorem 23.3. In turn $\left\{A \cup A_\alpha\right\}_\alpha$ is a collection of connected spaces that have a point in common (namely any point in $A)$, so $\bigcup_\alpha\left(A \cup A_\alpha\right)=A \cup\left(\bigcup_\alpha A_\alpha\right)$ is connected.
-Qed.

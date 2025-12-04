@@ -1,4 +1,0 @@
-Exercise 8.1.12 Let $N$ be a positive integer. Let $M$ be an integer relatively prime to $N$ and let $d$ be an integer relatively prime to $\varphi(N)$, where $\varphi$ denotes Euler's $\varphi$-function. Prove that if $M_{1} \equiv M^{d} \pmod N$ then $M \equiv M_{1}^{d^{\prime}} \pmod N$ where $d^{\prime}$ is the inverse of $d \bmod \varphi(N)$: $d d^{\prime} \equiv 1 \pmod {\varphi(N)}$.
-Proof.
-Note that there is some $k \in \mathbb{Z}$ such that $M^{d d^{\prime}} \equiv M^{k \varphi(N)+1} \equiv\left(M^{\varphi(N)}\right)^k \cdot M \bmod N$. By Euler's Theorem we have $M^{\varphi(N)} \equiv 1 \bmod N$, so that $M_1^{d^{\prime}} \equiv M \bmod N$.
-Qed.

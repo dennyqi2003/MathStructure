@@ -1,4 +1,0 @@
-Exercise 23.11 Let $p: X \rightarrow Y$ be a quotient map. Show that if each set $p^{-1}(\{y\})$ is connected, and if $Y$ is connected, then $X$ is connected.
-Proof.
-Suppose that $U$ and $V$ constitute a separation of $X$. If $y \in p(U)$, then $y=p(x)$ for some $x \in U$, so that $x \in p^{-1}(\{y\})$. Since $p^{-1}(\{y\})$ is connected and $x \in U \cap p^{-1}(\{y\})$, we have $p^{-1}(\{y\}) \subset U$. Thus $p^{-1}(\{y\}) \subset U$ for all $y \in p(U)$, so that $p^{-1}(p(U)) \subset U$. The inclusion $U \subset p^{-1}(p(U))$ if true for any subset and function, so we have the equality $U=p^{-1}(p(U))$ and therefore $U$ is saturated. Similarly, $V$ is saturated. Since $p$ is a quotient map, $p(U)$ and $p(V)$ are disjoint non-empty open sets in $Y$. But $p(U) \cup p(V)=Y$ as $p$ is surjective, so $p(U)$ and $p(V)$ constitute a separation of $Y$, contradicting the fact that $Y$ is connected. We conclude that $X$ is connected.
-Qed.

@@ -1,4 +1,0 @@
-Exercise 29.10 Show that if $X$ is a Hausdorff space that is locally compact at the point $x$, then for each neighborhood $U$ of $x$, there is a neighborhood $V$ of $x$ such that $\bar{V}$ is compact and $\bar{V} \subset U$.
-Proof.
-Let $U$ be a neighbourhood of $x$. Since $X$ is locally compact at $x$, there exists a compact subspace $C$ of $X$ containing a neighbourhood $W$ of $x$. Then $U \cap W$ is open in $X$, hence in $C$. Thus, $C \backslash(U \cap W)$ is closed in $C$, hence compact. Since $X$ is Hausdorff, there exist disjoint open sets $V_1$ and $V_2$ of $X$ containing $x$ and $C \backslash(U \cap W)$ respectively. Let $V=V_1 \cap U \cap W$. Since $\bar{V}$ is closed in $C$, it is compact. Furthermore, $\bar{V}$ is disjoint from $C \backslash(U \cap W) \supset C \backslash U$, so $\bar{V} \subset U$.
-Qed.

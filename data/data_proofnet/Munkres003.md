@@ -1,4 +1,0 @@
-Exercise 13.4a1 If $\mathcal{T}_\alpha$ is a family of topologies on $X$, show that $\bigcap \mathcal{T}_\alpha$ is a topology on $X$.
-Proof.
-Since $\emptyset$ and $X$ belong to $\mathcal{T}_\alpha$ for each $\alpha$, they belong to $\bigcap_\alpha \mathcal{T}_\alpha$. Let $\left\{V_\beta\right\}_\beta$ be a collection of open sets in $\bigcap_\alpha \mathcal{T}_\alpha$. For any fixed $\alpha$ we have $\cup_\beta V_\beta \in \mathcal{T}_\alpha$ since $\mathcal{T}_\alpha$ is a topology on $X$, so $\bigcup_\beta V_\beta \in \bigcap_\alpha \mathcal{T}_\alpha$. Similarly, if $U_1, \ldots, U_n$ are elements of $\bigcap_\alpha \mathcal{T}_\alpha$, then for each $\alpha$ we have $\bigcup_{i=1}^n U_i \in \mathcal{T}_\alpha$ and therefore $\bigcup_{i=1}^n U_i \in \bigcap_\alpha \mathcal{T}_\alpha$. It follows that $\bigcap_\alpha \mathcal{T}_\alpha$ is a topology on $X$.
-Qed.

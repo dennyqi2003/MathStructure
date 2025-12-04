@@ -1,4 +1,0 @@
-Exercise 2.5.31 Suppose that $G$ is an abelian group of order $p^nm$ where $p \nmid m$ is a prime.  If $H$ is a subgroup of $G$ of order $p^n$, prove that $H$ is a characteristic subgroup of $G$.
-Proof.
-Let $G$ be an abelian group of order $p^n m$, such that $p \nmid m$. Now, Given that $H$ is a subgroup of order $p^n$. Since $G$ is abelian $H$ is normal. Now we want to prove that $H$ is a characterestic subgroup, that is $\phi(H)=H$ for any automorphism $\phi$ of $G$. Now consider $\phi(H)$. Clearly $|\phi(H)|=p^n$. Suppose $\phi(H) \neq H$, then $|H \cap \phi(H)|=p^s$, where $s<n$. Consider $H \phi(H)$, this is a subgroup of $G$ as $H$ is normal. Also $|H \phi(H)|=\frac{|H||\phi(H)|}{|H \cap \phi(H)|}=\frac{p^{2 n}}{p^s}=p^{2 n-s}$, where $2 n-s>n$. By lagrange's theorem then $p^{2 n-s}\left|p^n m \Longrightarrow p^{n-s}\right| m \Longrightarrow p \mid m$-contradiction. So $\phi(H)=H$, and $H$ is characterestic subgroup of $G$.
-Qed.

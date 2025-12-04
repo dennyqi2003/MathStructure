@@ -1,4 +1,0 @@
-Exercise 3.21 If $\left\{E_{n}\right\}$ is a sequence of closed nonempty and bounded sets in a complete metric space $X$, if $E_{n} \supset E_{n+1}$, and if $\lim _{n \rightarrow \infty} \operatorname{diam} E_{n}=0,$ then $\bigcap_{1}^{\infty} E_{n}$ consists of exactly one point.
-Proof.
-Choose $x_n \in E_n$. (We use the axiom of choice here.) The sequence $\left\{x_n\right\}$ is a Cauchy sequence, since the diameter of $E_n$ tends to zero as $n$ tends to infinity and $E_n$ contains $E_{n+1}$. Since the metric space $X$ is complete, the sequence $x_n$ converges to a point $x$, which must belong to $E_n$ for all $n$, since $E_n$ is closed and contains $x_m$ for all $m \geq n$. There cannot be a second point $y$ in all of the $E_n$, since for any point $y \neq x$ the diameter of $E_n$ is less $\operatorname{than} d(x, y)$ for large $n$.
-Qed.

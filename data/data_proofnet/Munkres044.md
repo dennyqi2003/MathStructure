@@ -1,4 +1,0 @@
-Exercise 29.4 Show that $[0, 1]^\omega$ is not locally compact in the uniform topology.
-Proof.
-Consider $\mathbf{0} \in[0,1]^\omega$ and suppose that $[0,1]^\omega$ is locally compact at $\mathbf{0}$. Then there exists a compact $C$ containing an open ball $B=B_\rho(\mathbf{0}, \varepsilon) \subset[0,1]^\omega$. Note that $\bar{B}=[0, \varepsilon]^\omega$. Then $[0, \varepsilon]^\omega$ is closed and contained in the compact $C$, so it is compact. But $[0, \varepsilon]^\omega$ is homeomorphic to $[0,1]^\omega$, which is not compact by Exercise 28.1. This contradiction proves that $[0,1]^\omega$ is not locally compact in the uniform topology.
-Qed.

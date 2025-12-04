@@ -1,4 +1,0 @@
-Exercise 2.12a Let $(p_n)$ be a sequence and $f:\mathbb{N}\to\mathbb{N}$. The sequence $(q_k)_{k\in\mathbb{N}}$ with $q_k=p_{f(k)}$ is called a rearrangement of $(p_n)$. Show that if $f$ is an injection, the limit of a sequence is unaffected by rearrangement.
-Proof.
-Let $\varepsilon>0$. Since $p_n \rightarrow L$, we have that, for all $n$ except $n \leq N$, $d\left(p_n, L\right)<\epsilon$. Let $S=\{n \mid f(n) \leq N\}$, let $n_0$ be the largest $n \in S$, we know there is such a largest $n$ because $f(n)$ is injective. Now we have that $\forall n>n_0 f(n)>N$ which implies that $p_{f(n)} \rightarrow L$, as required.
-Qed.
