@@ -3,5 +3,6 @@
 /test
 /data
 /lean_env/.lake
+/.vscode
 __pycache__/
 *.py[cod]
