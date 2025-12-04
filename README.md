@@ -9,7 +9,12 @@ The system operates in two main stages:
 
 ## Environment Setup Guide
 
-This project runs best on **Linux** or **Windows (via WSL2)**. You should also install `python3` (Dependencies include: `openai`, `python-dotenv`, `pydantic`, `httpx`) and `Lean4`.
+This project runs best on **Linux** or **Windows (via WSL2)**.
+
+### Python & Lean4
+
+* Ensure you have **Lean 4** installed. You can installed it via `elan`
+* **Conda** is recommended to manage the Python environment. Create a clean environment and install dependencies. Dependencies include: `openai`, `pydantic`, `python-dotenv`, `httpx`.
 
 ### Compile Lean Environment
 
@@ -24,7 +29,7 @@ cd ..
 
 ### Configuration (.env)
 
-You need to create a configuration file `.env` in the root directory to store your API keys, paths, and adjust the parameters of the pipeline.
+You need to create a configuration file to store your API keys, paths, and adjust the parameters of the pipeline. Create a file named `.env` in the root directory and copy the following content. Fill in your API keys and path_to_project.
 
 ```ini
 # LLM API
@@ -44,12 +49,12 @@ STRUCTURE_EXTRACT_API_KEY=sk-xxx
 STRUCTURE_EXTRACT_BASE_URL=xxx
 STRUCTURE_EXTRACT_TEMP=0.2
 ## Model for Structure Evaluation
-STRUCTURE_EVAL_MODEL=deepseek-v3-250324
+STRUCTURE_EVAL_MODEL=xxx
 STRUCTURE_EVAL_API_KEY=sk-xxx
 STRUCTURE_EVAL_BASE_URL=xxx
 STRUCTURE_EVAL_TEMP=0.1
 ## Model for Structure Revise
-STRUCTURE_REVISE_MODEL=deepseek-v3-250324
+STRUCTURE_REVISE_MODEL=xxx
 STRUCTURE_REVISE_API_KEY=sk-xxx
 STRUCTURE_REVISE_BASE_URL=xxx
 STRUCTURE_REVISE_TEMP=0.5
