@@ -30,7 +30,7 @@ def clean_structure_json(json_str: str) -> str:
         struct_obj = Structure.model_validate_json(json_str)
         return struct_obj.model_dump_json(indent=2, exclude={'thinking'})
     except Exception as e:
-        print(f"⚠️ Warning: Failed to clean JSON (writing raw): {e}")
+        print(f"Warning: Failed to clean JSON (writing raw): {e}")
         return json_str
 
 def main():
