@@ -87,15 +87,13 @@ Put your informal mathematical proof into the following file:
 
 ### Execute
 
-Run the main controller script.
-
 **Run the Full Pipeline:**
 
 ```bash
 python main.py
 ```
 
-*(This performs: Structure Extraction -\> JSON Generation -\> Lean Sketch Generation -\> Auto-Correction)*
+*(This performs: Structure Generation -\> Lean Sketch Generation)*
 
 **Run Only Structure Generation:**
 
